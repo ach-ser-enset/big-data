@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Compteur de clics</title>
+</head>
+<body>
+    <h1>Compteur de clics Kafka</h1>
+    <form method="post" action="/click">
+        <label for="userId">User ID :</label>
+        <input type="text" id="userId" name="userId" required />
+        <button type="submit">Cliquez ici</button>
+    </form>
+    <p th:if="${message}" th:text="${message}"></p>
+</body>
+</html>
